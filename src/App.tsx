@@ -1,16 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Layout } from './components/Layout'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [] = useState(0)
 
   return (
-    <>
-     <div className="text-amber-600">Hello world</div>
-    </>
+  <Layout title="Board">
+<div>
+  
+</div>
+  </Layout>
   )
 }
 
-export default App
+export default App;
