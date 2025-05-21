@@ -3,8 +3,8 @@ import logo from "/assets/logo.svg"
 
 const Header = () => {
   return (
-    <header className="bg-[url('/assets/bg-header-mobile-bg.png')] 
-             lg:bg-[url('/assets/bg-header-desktop-bg.png')] bg-cover w-full mb-6">
+    <header className="bg-[url('/assets/mobile.jpg')] 
+             lg:bg-[url('/assets/desktop.jpg')] bg-cover w-full mb-6">
       <div className="flex flex-col items-center px-4 py-10 text-center">
         <img alt="Logo" className="w-20 h-20" src={logo} />
         <h1 className="mt-4 font-sans text-2xl">A history of everything you copy</h1>
