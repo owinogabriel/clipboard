@@ -1,6 +1,4 @@
-// Gallery.tsx
-
-import { ImageCard } from "../shared/ImageCard";
+import ImageCard from "../shared/ImageCard";
 
 const images = [
   {
@@ -29,7 +27,7 @@ const logos = [
 ]
 export const Gallery = () => {
   return (
-    <div className="grid grid-cols-1 text-start sm:grid-cols-1 md:grid-cols-3 gap-6 p-4">
+    <div className="grid grid-cols-1 text-center sm:grid-cols-1 md:grid-cols-3 gap-6 p-4">
       {images.map((img, index) => (
         <ImageCard key={index} {...img} />
       ))}
@@ -39,21 +37,21 @@ export const Gallery = () => {
 
 export const Brand = () => {
   return (
-    <div className="w-full  justify-center">
-    <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-6 p-5">
-      {logos.map((logo, key) => (
-        <div key={key} className="flex justify-center gap-x-6">
-          <img
-            src={`assets/logos/${logo}.png`}
-            alt="Brand Logo"
-            width="100"
-            height="60"
-            className="transition-transform hover:scale-105"
-          />
-        </div>
-      ))}
+    <div className="w-full  justify-center mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-6 p-5">
+        {logos.map((logo, key) => (
+          <div key={key} className="flex justify-center gap-x-6">
+            <img
+              src={`assets/logos/${logo}.png`}
+              alt="Brand Logo"
+              width="100"
+              height="60"
+              className="transition-transform hover:scale-105"
+            />
+          </div>
+        ))}
       </div>
-      </div>
+    </div>
   )
 
 }
